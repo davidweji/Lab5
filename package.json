@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "node backend/api.js"
+    "start": "node netlify/functions/api.js"
   },
   "keywords": [],
   "author": "",
