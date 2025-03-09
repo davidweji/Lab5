@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Recipe Finder</h1>
+        </div>
+        <div class="container">
+            <label for="diet">Diet:</label>
+            <input type="text" id="diet" placeholder="Enter diet (i.e. vegetarian)">
+            <label for="intolerances">Intolerances:</label>
+            <input type="text" id="intolerances" placeholder="Enter intolerances (i.e. gluten)">
+            <label for="includeIngredients">Includes Ingredients:</label>
+            <input type="text" id="includeIngredients" placeholder="Enter ingredients (i.e. tomato,cheese,etc)">
+            <label for="excludeIngredients">Excludes Ingredients:</label>
+            <input type="text" id="excludeIngredients" placeholder="Enter unwanted ingredients (i.e. tomato,cheese,etc)">
+            <button onclick="getRecipe()" class="btn">Find recipes</button>
+            <div id="result"></div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>

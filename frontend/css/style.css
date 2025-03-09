@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 246, 255);
+}
+.header {
+    background-color: rgb(65, 68, 255);
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.507);
+}
+
+input {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+label {
+    font-weight: bold;
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(141, 141, 255);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 100px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24);
+}
+
+#register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgb(141, 141, 255);
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 100px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.24);
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.39);
+    background-color: rgb(127, 236, 255);
+}
+button:hover {
+    background-color: rgb(85, 201, 224);
+}
+button:active {
+    background-color: rgb(170, 230, 241);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+.error-border {
+    border: 2px solid red;
+    background-color: rgba(255, 99, 99, 0.658);
+}
+
+.focused {
+    border: 2px solid rgba(0, 17, 255, 0.644) !important;
+    background-color: rgb(225, 252, 255);
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+a:hover {
+    color: rgb(11, 0, 109);
+}
+a:active {
+    color: rgb(193, 245, 255);
+}
+
+.move:hover {
+    border: 1px solid rgb(0, 58, 134);
+}
