@@ -47,5 +47,5 @@ try {
 }
 });
 
-api.use("/", router);
+api.use("/.netlify/functions/api", router);
 export const handler = serverless(api);
