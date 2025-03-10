@@ -25,11 +25,12 @@ async function getRecipe() {
     if (data.error) {
         resultsDiv.innerHTML = `<p>${data.error}</p>`;
     } else {
-        data.recipes.array.forEach(recipe => {
+        data.recipes.forEach(recipe => {
             resultsDiv.innerHTML += `<div class="recipe">
-                                     <h2>${recipe.title}</h2>
+                                     <h2>${recipe.title} - ${recipe.id}</h2>
                                      <img src="${recipe.image}" alt="${recipe.title}">
                                      </div>`; 
         });
+
     }
 }
