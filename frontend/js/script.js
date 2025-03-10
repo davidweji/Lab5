@@ -23,7 +23,7 @@ async function getRecipe() {
     const resultsDiv = document.getElementById("result");
     resultsDiv.innerHTML = "";
     if (data.error) {
-        resultsDiv.innerHTML = `<p>${data.error}</p>`;
+        resultsDiv.innerHTML = `<p class="error">${data.error}</p>`;
     } else {
         data.recipes.forEach(recipe => {
             resultsDiv.innerHTML += `<div class="recipe">
