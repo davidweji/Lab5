@@ -17,7 +17,7 @@ async function getRecipe() {
         return;
     }
 
-    const response = await fetch(`/api/recipes?${urlElements.toString()}`);
+    const response = await fetch(`/.netlify/functions/api?${urlElements.toString()}`);
     const data = await response.json();
 
     const resultsDiv = document.getElementById("result");
