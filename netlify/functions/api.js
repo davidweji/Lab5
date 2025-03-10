@@ -21,21 +21,15 @@ if(!diet && !intolerances && !includeIngredients && !excludeIngredients) {
 
 const urlElements = new URLSearchParams({apiKey: API_KEY});
 if(diet) {urlElements.append("diet", diet);}
-console.log("Diet: ",diet);
 if(intolerances) {urlElements.append("intolerances",intolerances);}
-console.log("Intolerances:",intolerances);
 if(includeIngredients) {urlElements.append("includeIngredients",includeIngredients);}
-console.log("include Ingredients:",includeIngredients);
 if(excludeIngredients) {urlElements.append("excludeIngredients",excludeIngredients);}
-console.log("exclude Ingredients:",excludeIngredients);
-const Furl = `https://api.spoonacular.com/recipes/complexSearch?${urlElements.toString()}`;
-console.log("final url:",Furl);
 
 try {
     const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?${urlElements.toString()}`);
     const data = await response.json();
 
-    if (data.cod !== 200) {
+    if (!data.results || data.results.length === 0) {
         return res.status(404).json({ error: "Recipe's not found." });
     }
 
