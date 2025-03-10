@@ -6,10 +6,10 @@ async function getRecipe() {
     const includeIngredients = document.getElementById("includeIngredients");
     const excludeIngredients = document.getElementById("excludeIngredients");
 
-    if(diet) {urlElements.append("diet",diet.value);}
-    if(intolerances) {urlElements.append("intolerances",intolerances.value);}
-    if(includeIngredients) {urlElements.append("includeIngredients",includeIngredients.value);}
-    if(excludeIngredients) {urlElements.append("excludeIngredients",excludeIngredients.value);}
+    if(diet && diet.value) {urlElements.append("diet",diet.value);}
+    if(intolerances && intolerances.value) {urlElements.append("intolerances",intolerances.value);}
+    if(includeIngredients && includeIngredients.value) {urlElements.append("includeIngredients",includeIngredients.value);}
+    if(excludeIngredients && excludeIngredients.value) {urlElements.append("excludeIngredients",excludeIngredients.value);}
 
 
     if(!urlElements.toString()) {
